@@ -53,3 +53,28 @@ function giveMeSomething(something){
 console.log(giveMeSomething("is better than nothing"))
 console.log(giveMeSomething("Bob Jane"))
 console.log(giveMeSomething("something"))
+
+function carsNeeded(numberOfPassengers){
+    let result = Math.ceil(numberOfPassengers /5)
+    return result
+  }
+  console.log(carsNeeded(5))
+  console.log(carsNeeded(11))
+  console.log(carsNeeded(0))
+  
+  function numberArgs(){
+    let result = arguments.length
+    return result
+  }
+  console.log(numberArgs("a","b","c"))
+  console.log(numberArgs("10","20","30","40", "50"))
+  console.log(numberArgs("x"))
+  console.log(numberArgs())
+  
+  function argType(x){
+    let  result = typeof(x)
+    return result
+  }
+  console.log(argType(1))
+  console.log(argType("a"))
+  console.log(argType("The man ran away"))
